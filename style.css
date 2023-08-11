@@ -1,0 +1,93 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: darkslateblue;
+}
+.wrapper{
+    background-color: white;
+    width: 450px;
+    padding: 28px;
+    border-radius: 10px;
+}
+.pass-flied{
+    height: 65px;
+    width: 100%;
+    position: relative;
+}
+.pass-flied input{
+    width: 100%;
+    height: 100%;
+    padding: 0 17px;
+    outline: none;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    border: 1px solid #999;
+}
+.pass-flied i{
+    right: 18px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+.content{
+    margin: 20px 0 10px;
+}
+.content p {
+    font-size: 1.3rem;
+}
+.content .requirement-list{
+    margin-top: 20px;
+}
+.requirement-list li{
+    list-style: none;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.requirement-list li i{
+    color: #aaa;
+    font-size: .6rem;
+    width: 20px;
+}
+.requirement-list li.valid i{
+    font-size: 1.2rem;
+    color: green;
+}
+.requirement-list li span{
+    margin-left: 12px;
+}
+.requirement-list li.valid span{
+    color: #999;
+}
+
+@media screen and (max-width: 500px) {
+    body, .wrapper {
+      padding: 15px;
+    }
+    .wrapper .pass-flied {
+      height: 55px;
+    }
+    .pass-flied input, .content p  {
+      font-size: 1.15rem;
+    }
+    .pass-flied i, .requirement-list li {
+      font-size: 1.1rem;
+    }
+    .requirement-list li span {
+      margin-left: 7px;
+    }
+  }
